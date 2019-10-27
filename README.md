@@ -1,9 +1,12 @@
 # Passport.js Authentication
+## passport-local
 
-Practice different Passport.js strategies
+Passport strategy for authenticating with a username and password.
 
-Section 1 - **passport-local**: Passport strategy for authenticating with a username and password.
 
----
+### Install
 
-Find each project files in it's own branch.
+```bash
+$ npm install passport
+$ npm install passport-local
+```
