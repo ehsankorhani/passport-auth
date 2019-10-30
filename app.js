@@ -1,7 +1,6 @@
 const express = require('express');
 const helmet = require('helmet');
 const passport = require('passport');
-const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const passportSetup = require('./config/passport-setup');
@@ -20,6 +19,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 
 // initialize passport
+passportSetup();
 app.use(passport.initialize());
 app.use(passport.session());
 
