@@ -1,8 +1,10 @@
 const express = require('express');
 const helmet = require('helmet');
+const dotenv = require('dotenv').config();
 const passport = require('passport');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
+const database = require('./config/database');
 const passportSetup = require('./config/passport-setup');
 
 const authRouter = require('./routes/auth');
