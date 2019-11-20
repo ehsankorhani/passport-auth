@@ -22,3 +22,9 @@ $ npm install mongoose
 ```bash
 $ npm install dotenv
 ```
+
+**Install _bcrypt_, a library to help you hash passwords**
+
+```bash
+$ npm install bcrypt
+```
