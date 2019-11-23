@@ -8,6 +8,8 @@ Section 2 - **passport-local**: With DB.
 
 Section 3 - **passport-local**: Password hashing.
 
+Section 4 - **passport-jwt**: Authenticate endpoints using a JSON web token.
+
 ---
 
 Find each project files in it's own branch.
