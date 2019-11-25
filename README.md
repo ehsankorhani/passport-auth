@@ -9,6 +9,7 @@ Passport strategy for authenticating with a username and password.
 ```bash
 $ npm install passport
 $ npm install passport-local
+$ npm install passport-jwt jsonwebtoken
 ```
 
 **Install _mongoose_ to interact with MongoDB**
