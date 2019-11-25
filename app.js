@@ -2,7 +2,6 @@ const express = require('express');
 const helmet = require('helmet');
 const dotenv = require('dotenv').config();
 const passport = require('passport');
-const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const database = require('./config/database');
 const passportSetup = require('./config/passport-setup');
@@ -18,12 +17,10 @@ app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 
 // initialize passport
 passportSetup();
 app.use(passport.initialize());
-app.use(passport.session());
 
 app.use('/auth', authRouter);
 app.use('/profile', profileRouter);

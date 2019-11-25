@@ -3,7 +3,11 @@ const router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.send('You\'re logged in');
+  //console.log('res:', res);
+  res.status(200).send({
+    auth: true,
+    message: 'You\'re logged in'
+  });
 });
 
 module.exports = router;
