@@ -10,6 +10,8 @@ Section 3 - **passport-local**: Password hashing.
 
 Section 4 - **passport-jwt**: Authenticate endpoints using a JSON web token.
 
+Section 5 - **passport-google-oauth20**: Authenticate using Google.
+
 ---
 
 Find each project files in it's own branch.
