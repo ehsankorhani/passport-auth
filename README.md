@@ -1,9 +1,18 @@
 # Passport.js Authentication
+## passport-google-oauth20
 
-Practice different Passport.js strategies
+Passport strategy for OAuth 2.0 authorization with Google.
 
-Section 1 - **passport-local**: Passport strategy for authenticating with a username and password.
 
----
+### Install
 
-Find each project files in it's own branch.
+```bash
+$ npm install passport
+$ npm install passport-google-oauth20
+```
+
+**Install _mongoose_ to interact with MongoDB**
+
+```bash
+$ npm install mongoose
+```
