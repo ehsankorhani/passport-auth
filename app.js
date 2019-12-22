@@ -1,5 +1,6 @@
 const express = require('express');
 const helmet = require('helmet');
+const dotenv = require('dotenv').config();
 const passport = require('passport');
 const logger = require('morgan');
 const database = require('./config/database');
@@ -29,8 +30,3 @@ app.get('/', (req, res) => {
 });
 
 module.exports = app;
-
-
-// const profileRoutes = require('./routes/profile-routes');
-// const passportSetup = require('./config/passport-setup');
-// const mongoose = require('mongoose');
