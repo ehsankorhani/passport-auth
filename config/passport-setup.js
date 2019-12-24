@@ -42,7 +42,21 @@ module.exports = () => {
       //     });
       //   }
       // });
-      done(null, null);
+
+
+            // User.findOne(profile, function (err, user) {
+      //   return done(null, user);
+      // });
+
+      //done(null, null); // -> Unauthorized
+
+      let newUser = new User({
+        googleId: profile.id,
+        username: profile.displayName,
+        thumbnail: profile._json.picture
+      });
+
+      done(null, newUser);
     })
   );
 };

@@ -3,7 +3,7 @@ const helmet = require('helmet');
 const dotenv = require('dotenv').config();
 const passport = require('passport');
 const logger = require('morgan');
-const database = require('./config/database');
+//const database = require('./config/database');
 const passportSetup = require('./config/passport-setup');
 const keys = require('./config/keys');
 
