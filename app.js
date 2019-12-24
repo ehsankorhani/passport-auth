@@ -26,7 +26,8 @@ app.use('/profile', profileRoutes);
 
 // home route
 app.get('/', (req, res) => {
-  res.render('home', { user: req.user });
+  //res.render('home', { user: req.user });
+  res.send('Welcome!');
 });
 
 module.exports = app;

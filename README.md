@@ -20,7 +20,7 @@ Passport strategy for OAuth 2.0 authorization with Google.
 - Select **Web application** for "Application Type"
 - Give it a name
 - Authorized JavaScript origins: http://localhost:3000 (or any port your express app is running on)
-- Authorized redirect URIs: http://localhost:3000/whatever (or a redirection path)
+- Authorized redirect URIs: http://localhost:3000/auth/google/redirect (or a redirection path)
 - Create
 - Copy **Client ID** and **Client Secret** to your app to be used by ```GoogleStrategy```
 
