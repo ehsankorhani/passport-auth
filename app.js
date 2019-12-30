@@ -6,6 +6,7 @@ const cors = require('cors');
 
 const passportSetup = require('./config/passport-setup');
 const authRoutes = require('./routes/auth');
+const profileRoutes = require('./routes/profile');
 
 const app = express();
 
@@ -21,6 +22,7 @@ passportSetup();
 app.use(passport.initialize());
 
 app.use('/auth', authRoutes);
+app.use('/profile', profileRoutes);
 
 app.get('/', (req, res) => {
   //res.send({ user: req.user });
