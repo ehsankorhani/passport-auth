@@ -2,32 +2,31 @@ const express = require('express');
 const helmet = require('helmet');
 const dotenv = require('dotenv').config();
 const passport = require('passport');
-const logger = require('morgan');
-//const database = require('./config/database');
-const passportSetup = require('./config/passport-setup');
-const keys = require('./config/keys');
+const cors = require('cors');
 
+const passportSetup = require('./config/passport-setup');
 const authRoutes = require('./routes/auth');
-const profileRoutes = require('./routes/profile');
+
 const app = express();
 
+const port = process.env.port || 3000;
+
 app.use(helmet());
-app.use(logger('dev'));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // initialize passport
 passportSetup();
 app.use(passport.initialize());
-app.use(passport.session());
 
 app.use('/auth', authRoutes);
-app.use('/profile', profileRoutes);
 
-// home route
 app.get('/', (req, res) => {
-  //res.render('home', { user: req.user });
-  res.send('Welcome!');
+  //res.send({ user: req.user });
+  return res.send('Welcome!');
 });
 
-module.exports = app;
+app.listen(port, () => {
+  console.log(`express is listening on port ${port}`);
+})

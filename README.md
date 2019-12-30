@@ -3,6 +3,10 @@
 
 Passport strategy for OAuth 2.0 authorization with Google.
 
+This code will only return an Access Token to a client.
+<br />
+It does not authenticate the client in the subsequent calls to other paths.
+
 ### Google API application
 
 - Browse to [Google Developers Console](https://console.developers.google.com/)
@@ -23,18 +27,3 @@ Passport strategy for OAuth 2.0 authorization with Google.
 - Authorized redirect URIs: http://localhost:3000/auth/google/redirect (or a redirection path)
 - Create
 - Copy **Client ID** and **Client Secret** to your app to be used by ```GoogleStrategy```
-
-
-### Install
-
-
-```bash
-$ npm install passport
-$ npm install passport-google-oauth20
-```
-
-**Install _mongoose_ to interact with MongoDB**
-
-```bash
-$ npm install mongoose
-```
