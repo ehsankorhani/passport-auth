@@ -12,6 +12,8 @@ Section 4 - **passport-jwt**: Authenticate endpoints using a JSON web token.
 
 Section 5 - **passport-google-oauth20**: Authenticate using Google (without session and JWT).
 
+Section 6 - **passport-google-oauth20 + passport-jwt**: Authenticate using Google and verification with JWT.
+
 ---
 
 Find each project files in it's own branch.
