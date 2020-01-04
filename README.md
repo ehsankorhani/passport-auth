@@ -22,7 +22,7 @@ It does not authenticate the client in the subsequent calls to other paths.
 - Application Terms of Service link: http://www.google.com/service
 - Save
 - Select **Web application** for "Application Type"
-- Give it a name
+- Give it a name: this name will show when sign-in to Google is requested
 - Authorized JavaScript origins: http://localhost:3000 (or any port your express app is running on)
 - Authorized redirect URIs: http://localhost:3000/auth/google/redirect (or a redirection path)
 - Create
