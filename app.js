@@ -25,7 +25,6 @@ app.use('/auth', authRoutes);
 app.use('/profile', profileRoutes);
 
 app.get('/', (req, res) => {
-  //res.send({ user: req.user });
   return res.send('Welcome!');
 });
 
